@@ -53,5 +53,15 @@ Utilizado para quando o desenvolvedor deseja criar querys nativas ou não de aco
 
 ![image](https://github.com/Viniciusalves16/Study_SpringData/assets/103587422/ae4b81ca-d36e-4b23-b8dc-2d949689fe56)
 
+--------------------
+@ManyToOne / OneToMany
+---------------------
+Utilizando a Anotação @ManyToOne, estamos indicando o relacionamento entre a tabela cliente e endereco. Essa configuração indica que muitos clientes podem estar associados a um único endereço.
 
+![image](https://github.com/Viniciusalves16/Study_SpringData/assets/103587422/73793e3d-2b9e-43ac-b569-adb8dbada339)
+
+
+Já a Anotação @OneToManyindica que um cliente pode ter muitos endereços diferentes. 
+
+![image](https://github.com/Viniciusalves16/Study_SpringData/assets/103587422/04c75d73-52f2-4426-a231-8c46d7a0d75b)
 
