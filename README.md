@@ -4,10 +4,11 @@ Repositório para auxiliar nos estudos de Spring Data.
 -  Entities
 -  Repositories
 -  FetchType Eager/Lazy
+-  @Query
 -  OnetoMany e ManyToOne
 -  @EntityGraph,
 -  FetchMode SELECT/SUBSELECT/JOIN
--  @Query e @Modify
+-  @Modify
 -  Cascade.ALL
 -  ISO 8601 UTC Date
 
@@ -45,7 +46,12 @@ Porém quando utilizamos FetchType.EAGER identificamos que as duas tabelas que e
 
 Isso pode ser um problema quando a aplicação recebe um relevante número de acessos e pode atrapalhar na performance.
 
+--------------------
+@Query
+---------------------
+Utilizado para quando o desenvolvedor deseja criar querys nativas ou não de acordo com sua preferência, além de permitir criar querys que o JpaRepository não possui dentro da sua interface.
 
+![image](https://github.com/Viniciusalves16/Study_SpringData/assets/103587422/ae4b81ca-d36e-4b23-b8dc-2d949689fe56)
 
 
 
