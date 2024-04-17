@@ -65,3 +65,37 @@ Já a Anotação @OneToManyindica que um cliente pode ter muitos endereços dife
 
 ![image](https://github.com/Viniciusalves16/Study_SpringData/assets/103587422/04c75d73-52f2-4426-a231-8c46d7a0d75b)
 
+---------------------
+@CascadeType.All
+---------------------
+
+O CascadeType.ALL é uma configuração em JPA (Java Persistence API) que especifica que todas as operações de persistência (CREATE, UPDATE, DELETE) feitas na entidade proprietária devem ser propagadas para as entidades associadas. Isso significa que se você fizer uma operação de persistência na entidade proprietária, as mesmas operações serão aplicadas às entidades associadas.
+
+Atraves do método delete é possível visualizar que utilizando o @CascadeType.ALL  as ações delete na tabela Cliente acaba propagando a ação e excluindo tudo referente aquele usuário na tabela de endereço
+
+![image](https://github.com/Viniciusalves16/Study_SpringData/assets/103587422/ae633923-8812-4ae7-aaef-8d3d118941eb)
+
+
+
+@CascadeType.ALL
+
+![image](https://github.com/Viniciusalves16/Study_SpringData/assets/103587422/56309f8e-d5ed-4ef5-82ec-3e93979c1f2f)
+
+Sem utilização do @CascadeType.ALL
+
+![image](https://github.com/Viniciusalves16/Study_SpringData/assets/103587422/2d1fe8a0-9144-4fb8-a7e0-b47457a85136)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
