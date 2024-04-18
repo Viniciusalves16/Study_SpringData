@@ -6,8 +6,7 @@ Repositório para auxiliar nos estudos de Spring Data.
 -  FetchType Eager/Lazy
 -  @Query
 -  OnetoMany e ManyToOne
--  @EntityGraph,
--  FetchMode SELECT/SUBSELECT/JOIN
+-  @EntityGraph
 -  @Modify
 -  Cascade.ALL
 -  ISO 8601 UTC Date
