@@ -86,14 +86,30 @@ Sem utilização do @CascadeType.ALL
 ![image](https://github.com/Viniciusalves16/Study_SpringData/assets/103587422/2d1fe8a0-9144-4fb8-a7e0-b47457a85136)
 
 
+---------------------
+ISO 8601 
+---------------------
+
+Onde:
+
+- **`YYYY`**: representa o ano com quatro dígitos.
+- **`MM`**: representa o mês com dois dígitos (de 01 a 12).
+- **`DD`**: representa o dia com dois dígitos (de 01 a 31).
+- **`T`**: é o separador entre a data e a hora.
+- **`HH`**: representa a hora com dois dígitos (de 00 a 23).
+- **`MM`**: representa os minutos com dois dígitos (de 00 a 59).
+- **`SS`**: representa os segundos com dois dígitos (de 00 a 59).
+- **`Z`**: indica que o horário está em UTC (Tempo Universal Coordenado).
+
+Por exemplo, se quisermos representar a data e hora atual em UTC no formato ISO 8601, seria algo assim:
+
+
+![image](https://github.com/Viniciusalves16/Study_SpringData/assets/103587422/998d16a9-c672-48dd-8e84-436d2496a795)
 
 
 
 
-
-
-
-
+![image](https://github.com/Viniciusalves16/Study_SpringData/assets/103587422/e5e9b1fe-67e2-41c9-83bb-320ccb83f4a0)
 
 
 
