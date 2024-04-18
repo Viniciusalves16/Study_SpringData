@@ -87,7 +87,7 @@ Sem utilização do @CascadeType.ALL
 
 
 ---------------------
-ISO 8601 
+ISO 8601 UTC 
 ---------------------
 
 Onde:
