@@ -111,6 +111,13 @@ Por exemplo, se quisermos representar a data e hora atual em UTC no formato ISO 
 ![image](https://github.com/Viniciusalves16/Study_SpringData/assets/103587422/e5e9b1fe-67e2-41c9-83bb-320ccb83f4a0)
 
 
+---------------------
+FetchMode SELECT/SUBSELECT/JOIN
+---------------------
 
+Fetch Mode: Refere-se à forma como os dados são recuperados de um banco de dados e disponibilizados para a aplicação. É uma abordagem mais ampla que pode incluir o modo como os resultados de uma consulta são tratados, como os objetos são carregados em memória e como a transmissão dos dados é gerenciada.
 
+Modo de implementar:
+
+![image](https://github.com/Viniciusalves16/Study_SpringData/assets/103587422/38790f38-1736-4df0-8cda-9215911999d9)
 
