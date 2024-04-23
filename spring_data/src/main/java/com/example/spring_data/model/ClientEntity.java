@@ -1,10 +1,11 @@
 package com.example.spring_data.model;
 
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
 
 import java.util.List;
 
@@ -18,6 +19,7 @@ public class ClientEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "cliente_id")
     private Long id;
 
     @Column(name = "nome")
@@ -26,21 +28,13 @@ public class ClientEntity {
     @Column(name = "idade")
     private Integer age;
 
-    @JsonIgnore(value = true)
-//    @OneToOne(fetch = FetchType.EAGER)
-
 
 //    @OneToMany
 //    @ManyToOne
-//    @OneToOne
-    @JoinColumn(name = "endereco_id", referencedColumnName = "endereco_id")
-    private AddressEntity address;
+    @OneToMany(mappedBy = "clientEntity")
+    @Fetch(value = FetchMode.SELECT)
+    private List<AddressEntity> address;
 
-    public ClientEntity(Client c) {
-        this.name = c.name();
-        this.age = c.age();
-        this.address = (AddressEntity) new AddressEntity(c.address());
-    }
 
 //todo:
     /**
@@ -51,8 +45,8 @@ public class ClientEntity {
      @Column(name = "name" )// propriedade que representa o nome da tabela do banco de dados
      @OneToOne // tipo do relacionamento entre as tabelas
 
-
-    /**
+d
+     /**
 
      O CascadeType.ALL é uma configuração em JPA (Java Persistence API) que especifica que todas as operações de persistência (CREATE, UPDATE, DELETE)
      feitas na entidade proprietária devem ser propagadas para as entidades associadas. Isso significa que se você fizer uma operação de persistência na

@@ -1,5 +1,6 @@
 package com.example.spring_data.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -15,8 +16,7 @@ public class AddressEntity {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "endereco_id")
-    private Long addressId;
+    private Long id;
 
     @Column(name = "cep")
     private Integer postalCode;
@@ -29,6 +29,14 @@ public class AddressEntity {
 
     @Column(name = "complemento")
     private String complement;
+
+
+    @ManyToOne
+    @JsonIgnore
+    @JoinColumn(name = "client_id")
+    private ClientEntity clientEntity;
+
+
 
 
     public AddressEntity(Address address) {
